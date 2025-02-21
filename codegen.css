@@ -1,0 +1,70 @@
+body {
+    background-image: url(assets/seeds.jpg);
+
+}
+
+section {
+    background-color: wheat;
+    width: 75vw;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    box-shadow: 2px 4px 11px 1px black;
+    border: solid antiquewhite;
+    padding: 2rem;
+}
+
+form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+fieldset {
+    font-size: 2rem;
+}
+
+fieldset input, #plant__bulky {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 2rem;
+}
+
+div input {
+    font-size: 1.5rem;
+}
+
+.codesummary h1 {
+    text-align: center;
+}
+
+.container__formswitch {
+    text-align: center;
+}
+
+#form__switch, #submitbutton, #resetbutton {
+	width: 12rem;
+	height: 2rem;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+#form__buttons {
+    flex-direction: row;
+}
+
+#templateoutput {
+        margin-left: 25vw;
+        text-align: center;
+}

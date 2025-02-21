@@ -1,0 +1,50 @@
+
+.reminders {
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.topdonation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exampleemail-container img {
+    margin: 1rem auto 2rem auto;
+}
+
+
+
+@media only screen and (min-width: 800px) { 
+    .direction__positioning {
+        display: flex;
+        margin-top: 1rem;
+    }
+    
+    .methodone {
+        margin-top: 1rem;
+    }
+
+    .methodone__directions {
+        display: flex;
+        /* width: 50rem; */
+        margin-top: 1rem;
+    }
+    
+    .methodone__donations,.withdonations {
+        border-right: solid rgba(0,0,0, .2); 
+    }
+
+    .withdonations__directions {
+        padding: 0;
+    }
+
+    .exampleemail-container img {
+        width: 30rem;
+    }
+
+}

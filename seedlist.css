@@ -1,0 +1,28 @@
+ul {
+   list-style: none;
+   padding-left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.white {
+    border-bottom: white solid thick;
+}
+
+.red {
+    border-bottom: red solid thick;
+}
+
+.green {
+    border-bottom: green solid thick;
+}
+
+.blue {
+    border-bottom: blue solid thick;
+}
+
+.yellow {
+    border-bottom: yellow solid thick;
+}

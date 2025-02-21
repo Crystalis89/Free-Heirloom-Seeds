@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeHeirloomSeeds.com - Code Gen</title>
+    <script src="codegen.js" defer></script>
+    <link rel="stylesheet" href="codegen.css">
+</head>
+<body>
+    <section class="codesummary">
+        <h1>Code Summary</h1>
+        <p>
+            For transparency and so even those with no site building knowledge can use this tool to add a plant to the site below is a simple explanation on what the html this app generates means.
+
+            This does not add anything to the site directly just creating the code for you to use with a simple copy/paste to add it to the site manually.
+        </p>
+
+        <ul>
+            <li><p>section - One of the standard container elements for different sections of a page.</p></li>
+            <li><p>h3 - Heading, ranging in importance from most at h1 to least at h6. Important for navigation, particularly for those using tools like a screenreader.</p></li>
+            <li><p>p - Paragraph, the standard element for text on a site.</p></li>
+            <li><p>ol and ul - Ordered (numbers) and Unordered (bullet points) list, can disable the numbers/bullets if using just for formatting and positioning. Also makes site easier to navigate.</p></li>
+            <li><p>li - List item, placed inside a ol or ul element.</p></li>
+            <!-- <li><p></p></li> -->
+
+        </ul>
+
+        <p>
+            To add to site enter the plant information in the form, click submit, the code will be automaticly saved to your clipboard ready to be pasted. After that open seedlist.html in whatever way you used to edit the site and scroll down til reach the right alphabetical section for it and paste between the "ul" elements in the proper alphabetical section. All the styling will be applied automaticly.
+        </p>
+        <p>
+            To make navigating easier each seedlist section has an id along lines of "section__a", "section__m", or "bulky__section__a". So can just easily ctrl+f like would for anything text.
+        </p>
+    </section>
+    
+    <section class="container__formswitch">
+       <p>Click button for Form to switch between cultivar form (IE: Hon Tsai Tai) or plant group form, IE: Asian Greens, </p>
+       <button id="form__switch">Switch</button>
+    </section>
+
+    <section class="formcontainer__plantcard" id="formcontainer__plantcard">
+        <form action="">
+            <div id="form__code">
+            <label for="plant__code">Plant Code:</label>
+            <input type="text" id="plant__code" name="plant__code" placeholder="AG1">
+            </div>
+            <div id="form__name">
+
+            <label for="plant__name">Plant Name:</label>
+            <input type="text" name="plant__name" id="plant__name" placeholder="Asian Greens" required>
+            </div>
+
+            <div id="form__cultivar">
+
+            <label for="plant__cultivar">Plant Cultivar:</label>
+            <input type="text" name="plant__cultivar" id="plant__cultivar" placeholder="Hon Tsai Tai">
+        </div>
+
+            <div id="form__eta">
+
+            <label for="plant__timetilharvest">Time Til Harvest:</label>
+            <input type="text" name="plant__timetilharvest" id="plant__timetilharvest" placeholder="65-70">
+        </div>
+
+            <div id="form__description">
+
+            <label for="plant__description">Plant Description:</label>
+            <!-- Possibly switch this for a textarea box instead -->
+            <textarea type="text" name="plant__description" id="plant__description" rows="15" cols="50" required></textarea>
+            </div>
+            <div id="form__bulky">
+                <label for="plant__bulky">To bulky for standard envelope?</label>
+                <input type="checkbox" name="plant__bulky" id="plant__bulky">
+            </div>
+
+            <fieldset id="plant__category">
+                <legend>Plant Category</legend>
+
+                <label for="plant__fruit">Fruit</label>
+                <input type="radio" name="category" id="plant__fruit" value="fruit">
+
+                <label for="plant__vegetable">Vegetable</label>
+                <input type="radio" name="category" id="plant__vegetable" value="vegetable">
+
+                <label for="plant__grain">Grain</label>
+                <input type="radio" name="category" id="plant__grain" value="grain">
+
+                <label for="plant__herb">Herb</label>
+                <input type="radio" name="category" id="plant__herb" value="herb">
+
+                <label for="plant__flower">Flower</label>
+                <input type="radio" name="category" id="plant__flower" value="flower">
+
+                <label for="plant__other">Other</label>
+                <input type="radio" name="category" id="plant__other" value="other" checked="checked">                
+            </fieldset>            
+            
+            <fieldset id="plant__color">
+                <legend>Bottom Border Color</legend>
+
+                <label for="color__none" checked="checked">None</label>
+                <input type="radio" name="color" id="color__none" value="none" checked="checked">
+
+                <label for="color__white">White</label>
+                <input type="radio" name="color" id="color__white" value="white">
+
+                <label for="color__red">Red</label>
+                <input type="radio" name="color" id="color__red" value="red">
+
+                <label for="color__blue">Blue</label>
+                <input type="radio" name="color" id="color__blue" value="blue">
+
+                <label for="color__green">Green</label>
+                <input type="radio" name="color" id="color__green" value="green">
+
+                <label for="color__yellow">Yellow</label>
+                <input type="radio" name="color" id="color__yellow" value="yellow">
+            </fieldset>
+        <div id="form__buttons">
+            <input type="submit" id="submitbutton">
+            <input type="reset" id="resetbutton">
+        </div>
+        </form>
+        <textarea name="templateoutput" id="templateoutput" rows="15" cols="50">Template Output</textarea>
+
+    </section>
+
+
+
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Global styles */
+body {
+    background-image: url(assets/seeds.jpg);
+    position: relative;   
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    border-bottom: rgba(0,0,0,.07) solid;
+    color: orangered;
+
+}
+
+section {
+    background-color: wheat;
+}
+
+li {
+    text-align: start;
+    margin-bottom: 1rem;
+    border-bottom: solid rgba(0,0,0, .2);
+    box-shadow: 1px 2px 6px -1px slategray;
+    padding: 1rem;
+    word-break: break-word;
+}
+
+.highlight {
+    color: orangered;
+}
+
+.donate__form {
+    margin-top: 10px;
+}
+
+.donate__button {
+    border-radius: 20px;
+    height: 2.5rem;
+}
+
+/* Header */
+
+header {
+    background-color: #000F0A;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+.header__hamburger {
+        background-color: #000F0A;
+        border: none;
+}
+
+/* Container for Sidebar and Main to make positioning easier */
+
+.positioning-container {
+    display: flex;
+}
+
+/* Main container */
+
+main {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width: 90vw;
+    font-weight: 600;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+main > section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    box-shadow: 2px 4px 11px 1px black;
+    border: solid antiquewhite;
+    text-align: center;
+    padding: 1rem;
+}
+
+.mainheading {
+    font-size: clamp(1rem, 6vw, 2rem);
+}
+
+
+
+/* Sidebar */
+
+    .sidebar {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000F0A;
+        align-items: center;
+        top: 0;
+        font-size: 1.5rem;
+    }
+
+    .sidebar__nav {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .sidebar a {
+        color: white;
+        font-weight: 600;
+    }
+
+    .sidebar__closebutton {
+            background-color: #000F0A;
+            border: none;
+            padding: 2rem;
+    }
+
+/* Footer */
+
+footer, footer section  {
+    background-color: #000F0A;
+    color: white;
+}
+
+.footer__legalstatements {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__legalstatements :first-child {
+    margin-top: 0;
+}
+
+
+
+@media only screen and (min-width: 800px) { 
+    header {
+        display: none;
+    }
+
+    section {
+        padding: 0rem 1.5rem 1rem 1.5rem;
+    }
+
+    .sidebar {
+        display: flex;
+        position: sticky;
+        width: 15rem;
+    }
+
+    .sidebar__closebutton {
+        display: none;
+  }
+    
+    .header__hamburger,
+    .closebutton {
+        display: none;
+    }
+
+   main {
+        /* margin-left: 13rem; */
+        margin-top: 2rem;
+        width: 75%;
+        padding: 3rem;
+    }
+
+     
+  }
