@@ -1,0 +1,48 @@
+Template for seed entry. 
+
+Contents on old site template:
+	grouped together type of plant (squash(squash), sunflower, beans, ect this part might be just another toggle or separate form)
+	seed code
+	plant name
+	specific cultivar of the plant
+	how long to grow to harvest
+	short description (should I set a text max?)
+	aproximate seeds per request
+
+
+
+New additions to template?:
+		plant tag (fruit, vegetable, flower, grain).
+
+	
+	
+	
+Freeheirloom seeds, probably wouldn't pay but could do it in trade for seeds as long as nothing fancy but good for practice. Their current site is using table filled with <p> elements for layout, so they likely do it themselves and are at least a decade out of date. Still they are capable of at least basic editing so as long as keep it similarly easy while looking better they might accept it.
+
+Maybe write a simple JS script where he just puts in the plant name, text, and itemcode and it will give him the HTML to paste. Since it would just be a  few simple form.values slotted into a simple template it shouldnt take much and could probably just have it hosted on github or just a hidden page. Add a few options he can toggle to control styling via adding classes like font color. Maybe include option for them to include an information link. If possible including a letter class to position it in proper place in the list?
+
+On my end that would be more complicated initially but on theirs would remove the need to code entirely and just become copy/paste.
+
+Also to aid navigation a simple set of links for alphabetic navigation.
+
+
+
+https://freeheirloomseeds.org/volunteer.html
+
+Hello I heard about your site when searching seeds and after browsing it decided to update your site as a learning project. Visually it mostly the same just making it look a bit more polished/modern and adding some alphabetic navigation, on backend it using more modern code that let it scale better and be more accessible. 
+
+But to make adding easier to whoever doing it now I also wrote a simple tool where you just fill in the data in the template and it will give you the code to paste which also let you customize things a bit more with a simple checkbox click. I didn't include ability to add or remove things directly for security reasons.
+
+I know you are a small charity so not going to ask for payment since I did this for learning and to help, but I wouldn't say no to some seeds. I am very new to gardening without much good soil so whatever you think is the easiest to germinate/lowest maintinence in Pennsylvania (zone 6b), I would be happy with most anything just out of curiosity.
+
+
+Quick math say 2 weeks at average of 3 hours a day and minimum wage of $8 would come out to roughly $360.
+
+
+   <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="YNZK5MSG4LACN">
+                        <input type="image" src="image/donate.jpg" border="0" name="submit"> 
+                    </form>
+					
+					
+Don't forget to include a QR code for the site for them to use.

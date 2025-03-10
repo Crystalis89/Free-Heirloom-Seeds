@@ -54,6 +54,11 @@ header {
     width: 100%;
 }
 
+.home {
+        color: white;
+        font-weight: 600;
+}
+
 .header__hamburger {
         background-color: #000F0A;
         border: none;

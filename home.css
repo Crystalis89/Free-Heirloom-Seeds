@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.methodone, .methodone__directions {
+    padding: 0;
+}
+
 .exampleemail-container img {
     margin: 1rem auto 2rem auto;
 }
@@ -35,6 +39,10 @@
         margin-top: 1rem;
     }
     
+    .methodone__donations, .furtherdirections__nodonations {
+        width: 50%;
+    }
+
     .methodone__donations,.withdonations {
         border-right: solid rgba(0,0,0, .2); 
     }
